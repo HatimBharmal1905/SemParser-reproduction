@@ -1,0 +1,112 @@
+# C:word = concept | I:word@@concept = instance of that concept | I:word = orphan instance
+# Fix the heuristic labels by hand. Delete lines you cannot label. Do not change spacing/tokens.
+Scheduling a redundant attempt for C:task I:task_1445144423722_0020_m_000000@@task
+JVM with C:ID : I:jvm_1445144423722_0020_m_000005@@ID asked for a task
+Registering C:class I:org.apache.hadoop.mapreduce.v2.app.job.event.TaskEventType@@class for C:class I:org.apache.hadoop.mapreduce.v2.app.MRAppMaster@@class $ TaskEventDispatcher
+Thread Thread [ eventHandlingThread , I:5 , main ] threw an Exception.
+After Scheduling : C:PendingReds : I:1@@PendingReds C:ScheduledMaps : I:0@@ScheduledMaps C:ScheduledReds : I:0@@ScheduledReds C:AssignedMaps : I:10@@AssignedMaps C:AssignedReds : I:0@@AssignedReds C:CompletedMaps : I:0@@CompletedMaps C:CompletedReds : I:0@@CompletedReds C:ContAlloc : I:10@@ContAlloc C:ContRel : I:0@@ContRel C:HostLocal : I:7@@HostLocal C:RackLocal : I:3@@RackLocal
+Retrying connect to C:server : I:msra-sa-41@@server : I:8030. Already tried I:0 time ( s ) ; retry policy is RetryUpToMaximumCountWithFixedSleep ( C:maxRetries = I:10@@maxRetries , C:sleepTime = I:1000@@sleepTime MILLISECONDS )
+Before Scheduling : C:PendingReds : I:1@@PendingReds C:ScheduledMaps : I:0@@ScheduledMaps C:ScheduledReds : I:0@@ScheduledReds C:AssignedMaps : I:10@@AssignedMaps C:AssignedReds : I:0@@AssignedReds C:CompletedMaps : I:1@@CompletedMaps C:CompletedReds : I:0@@CompletedReds C:ContAlloc : I:11@@ContAlloc C:ContRel : I:1@@ContRel C:HostLocal : I:7@@HostLocal C:RackLocal : I:3@@RackLocal
+Registering C:class I:org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventType@@class for C:class I:org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler@@class
+Registering C:class I:org.apache.hadoop.mapreduce.v2.app.rm.ContainerAllocator@@class $ EventType for C:class I:org.apache.hadoop.mapreduce.v2.app.MRAppMaster@@class $ ContainerAllocatorRouter
+Received completed C:container I:container_1445144423722_0020_01_000005@@container
+Num completed C:Tasks : I:1@@Tasks
+getResources ( ) for I:application_1445144423722_0020 : C:ask = I:0@@ask C:release = I:1@@release C:newContainers = I:0@@newContainers C:finishedContainers = I:1@@finishedContainers resourcelimit = < C:memory : I:1024@@memory , C:vCores : I:-26@@vCores > C:knownNMs = I:4@@knownNMs
+Resolved I:04DN8IQ.fareast.corp.microsoft.com to /default-rack
+Recalculating schedule , headroom = < C:memory : I:0@@memory , C:vCores : I:-27@@vCores >
+Processing the event EventType : CONTAINER_REMOTE_CLEANUP for C:container I:container_1445144423722_0020_01_000005@@container C:taskAttempt I:attempt_1445144423722_0020_m_000003_0@@taskAttempt
+Input C:size for C:job I:job_1445144423722_0020@@job = I:1256521728.@@size Number of C:splits = I:10@@splits
+Error Recovery for C:block I:BP-1347369012-10.190.173.170-1444972147527@@block : I:blk_1073743512_2731 in C:pipeline I:10.86.169.121@@pipeline : I:50010 , I:10.190.173.170 : I:50010 : bad C:datanode I:10.190.173.170@@datanode : I:50010
+Created MRAppMaster for C:application I:appattempt_1445144423722_0020_000001@@application
+I:2 failures on C:node I:MININT-FNANLI5.fareast.corp.microsoft.com@@node
+Kind : YARN_AM_RM_TOKEN , Service : , Ident : ( appAttemptId { application_id { C:id : I:20@@id C:cluster_timestamp : I:1445144423722@@cluster_timestamp } C:attemptId : I:1@@attemptId } C:keyId : I:-127633188@@keyId )
+Progress of C:TaskAttempt I:attempt_1445144423722_0020_m_000001_0@@TaskAttempt is : I:0.37551183
+ATTEMPT_START I:task_1445144423722_0020_m_000005
+MRAppMaster launching normal , non-uberized , multi-container C:job I:job_1445144423722_0020.@@job
+Starting Socket C:Reader # I:1@@Reader for C:port I:62260@@port
+Logging to I:org.slf4j.impl.Log4jLoggerAdapter ( org.mortbay.log ) via I:org.mortbay.log.Slf4jLog
+Added I:attempt_1445144423722_0020_m_000001_1 to list of failed maps
+Started HttpServer2 $ SelectChannelConnectorWithSafeStartup @ I:0.0.0.0 : I:62267
+Processing the event EventType : CONTAINER_REMOTE_LAUNCH for C:container I:container_1445144423722_0020_01_000004@@container C:taskAttempt I:attempt_1445144423722_0020_m_000002_0@@taskAttempt
+Registering C:class I:org.apache.hadoop.mapreduce.v2.app.job.event.JobFinishEvent@@class $ Type for C:class I:org.apache.hadoop.mapreduce.v2.app.MRAppMaster@@class $ JobFinishEventHandler
+KILLING I:attempt_1445144423722_0020_m_000002_0
+Not uberizing I:job_1445144423722_0020 because : not enabled ; too many maps ; too much input ;
+Adding # I:0 tokens and # I:1 secret keys for NM use for launching container
+We launched I:1 speculations. Sleeping I:15000 milliseconds.
+JOB_CREATE I:job_1445144423722_0020
+Registering C:class I:org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType@@class for C:class I:org.apache.hadoop.mapreduce.v2.app.MRAppMaster@@class $ TaskAttemptEventDispatcher
+JVM with C:ID : I:jvm_1445144423722_0020_m_000008@@ID given C:task : I:attempt_1445144423722_0020_m_000006_0@@task
+DefaultSpeculator.addSpeculativeAttempt -- we are speculating I:task_1445144423722_0020_m_000000
+Default file system [ C:hdfs : I://msra-sa-41@@hdfs : I:9000 ]
+Opening C:proxy : I:MSRA-SA-41.fareast.corp.microsoft.com@@proxy : I:7109
+The job-jar file on the remote FS is C:hdfs : I://msra-sa-41@@hdfs : I:9000/tmp/hadoop-yarn/staging/msrabi/.staging/job_1445144423722_0020/job.jar
+Task cleanup failed for C:attempt I:attempt_1445144423722_0020_m_000002_0@@attempt
+C:TaskAttempt : [ I:attempt_1445144423722_0020_m_000006_0@@TaskAttempt ] using C:containerId : [ I:container_1445144423722_0020_01_000008@@containerId on C:NM : [ I:MSRA-SA-41.fareast.corp.microsoft.com@@NM : I:7109 ]
+Registering C:class I:org.apache.hadoop.mapreduce.v2.app.speculate.Speculator@@class $ EventType for C:class I:org.apache.hadoop.mapreduce.v2.app.MRAppMaster@@class $ SpeculatorEventDispatcher
+Container complete event for unknown container C:id I:container_1445144423722_0020_01_000012@@id
+Added global filter ' safety ' ( C:class = I:org.apache.hadoop.http.HttpServer2@@class $ QuotingInputFilter )
+Registering C:class I:org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncher@@class $ EventType for C:class I:org.apache.hadoop.mapreduce.v2.app.MRAppMaster@@class $ ContainerLauncherRouter
+Slow ReadProcessor read fields took I:65020ms ( C:threshold = I:30000ms@@threshold ) ; ack : C:seqno : I:-2@@seqno status : SUCCESS status : ERROR C:downstreamAckTimeNanos : I:0@@downstreamAckTimeNanos , C:targets : [ I:10.86.169.121@@targets : I:50010 , I:10.190.173.170 : I:50010 ]
+Number of reduces for C:job I:job_1445144423722_0020@@job = I:1
+Launching I:attempt_1445144423722_0020_m_000004_0
+maxContainerCapability : < C:memory : I:8192@@memory , C:vCores : I:32@@vCores >
+Reduce slow start threshold not met. C:completedMapsForReduceSlowstart I:1@@completedMapsForReduceSlowstart
+Jetty bound to C:port I:62267@@port
+All maps assigned. Ramping up all remaining C:reduces : I:1@@reduces
+Event Writer setup for C:JobId : I:job_1445144423722_0020@@JobId , File : C:hdfs : I://msra-sa-41@@hdfs : I:9000/tmp/hadoop-yarn/staging/msrabi/.staging/job_1445144423722_0020/job_1445144423722_0020_1.jhist
+Got allocated C:containers I:1@@containers
+Assigned C:container I:container_1445144423722_0020_01_000008@@container to I:attempt_1445144423722_0020_m_000006_0
+Adding C:protocol I:org.apache.hadoop.mapreduce.v2.api.MRClientProtocolPB@@protocol to the server
+Registering C:class I:org.apache.hadoop.mapreduce.v2.app.job.event.JobEventType@@class for C:class I:org.apache.hadoop.mapreduce.v2.app.MRAppMaster@@class $ JobEventDispatcher
+reduceResourceRequest : < C:memory : I:1024@@memory , C:vCores : I:1@@vCores >
+DFSOutputStream ResponseProcessor exception for C:block I:BP-1347369012-10.190.173.170-1444972147527@@block : I:blk_1073743512_2731
+Task succeeded with C:attempt I:attempt_1445144423722_0020_m_000003_0@@attempt
+mapResourceRequest : < C:memory : I:1024@@memory , C:vCores : I:1@@vCores >
+Address change detected. Old : I:msra-sa-41/10.190.173.170 : I:9000 New : I:msra-sa-41 : I:9000
+JVM with C:ID : I:jvm_1445144423722_0020_m_000004@@ID asked for a task
+After Scheduling : C:PendingReds : I:1@@PendingReds C:ScheduledMaps : I:4@@ScheduledMaps C:ScheduledReds : I:0@@ScheduledReds C:AssignedMaps : I:6@@AssignedMaps C:AssignedReds : I:0@@AssignedReds C:CompletedMaps : I:0@@CompletedMaps C:CompletedReds : I:0@@CompletedReds C:ContAlloc : I:6@@ContAlloc C:ContRel : I:0@@ContRel C:HostLocal : I:3@@HostLocal C:RackLocal : I:3@@RackLocal
+Retrying connect to C:server : I:msra-sa-41@@server : I:8030. Already tried I:0 time ( s ) ; retry policy is RetryUpToMaximumCountWithFixedSleep ( C:maxRetries = I:10@@maxRetries , C:sleepTime = I:1000@@sleepTime MILLISECONDS )
+Before Scheduling : C:PendingReds : I:0@@PendingReds C:ScheduledMaps : I:3@@ScheduledMaps C:ScheduledReds : I:1@@ScheduledReds C:AssignedMaps : I:9@@AssignedMaps C:AssignedReds : I:0@@AssignedReds C:CompletedMaps : I:1@@CompletedMaps C:CompletedReds : I:0@@CompletedReds C:ContAlloc : I:11@@ContAlloc C:ContRel : I:1@@ContRel C:HostLocal : I:7@@HostLocal C:RackLocal : I:3@@RackLocal
+Received completed C:container I:container_1445144423722_0020_01_000012@@container
+getResources ( ) for I:application_1445144423722_0020 : C:ask = I:4@@ask C:release = I:0@@release C:newContainers = I:1@@newContainers C:finishedContainers = I:0@@finishedContainers resourcelimit = < C:memory : I:0@@memory , C:vCores : I:-27@@vCores > C:knownNMs = I:4@@knownNMs
+Resolved I:MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+Recalculating schedule , headroom = < C:memory : I:7168@@memory , C:vCores : I:-20@@vCores >
+Processing the event EventType : CONTAINER_REMOTE_CLEANUP for C:container I:container_1445144423722_0020_01_000003@@container C:taskAttempt I:attempt_1445144423722_0020_m_000001_0@@taskAttempt
+I:1 failures on C:node I:MININT-FNANLI5.fareast.corp.microsoft.com@@node
+Progress of C:TaskAttempt I:attempt_1445144423722_0020_m_000008_0@@TaskAttempt is : I:0.34610128
+ATTEMPT_START I:task_1445144423722_0020_m_000009
+Starting Socket C:Reader # I:1@@Reader for C:port I:62270@@port
+Added I:attempt_1445144423722_0020_m_000002_1 to list of failed maps
+Processing the event EventType : CONTAINER_REMOTE_LAUNCH for C:container I:container_1445144423722_0020_01_000008@@container C:taskAttempt I:attempt_1445144423722_0020_m_000006_0@@taskAttempt
+KILLING I:attempt_1445144423722_0020_m_000001_0
+JVM with C:ID : I:jvm_1445144423722_0020_m_000002@@ID given C:task : I:attempt_1445144423722_0020_m_000000_0@@task
+Default file system [ C:hdfs : I://msra-sa-41@@hdfs : I:9000 ]
+Opening C:proxy : I:MSRA-SA-39.fareast.corp.microsoft.com@@proxy : I:28345
+Task cleanup failed for C:attempt I:attempt_1445144423722_0020_m_000001_0@@attempt
+C:TaskAttempt : [ I:attempt_1445144423722_0020_m_000009_0@@TaskAttempt ] using C:containerId : [ I:container_1445144423722_0020_01_000011@@containerId on C:NM : [ I:MSRA-SA-39.fareast.corp.microsoft.com@@NM : I:28345 ]
+Launching I:attempt_1445144423722_0020_m_000007_0
+Reduce slow start threshold not met. C:completedMapsForReduceSlowstart I:1@@completedMapsForReduceSlowstart
+Got allocated C:containers I:1@@containers
+Assigned C:container I:container_1445144423722_0020_01_000002@@container to I:attempt_1445144423722_0020_m_000000_0
+Address change detected. Old : I:msra-sa-41/10.190.173.170 : I:8030 New : I:msra-sa-41 : I:8030
+JVM with C:ID : I:jvm_1445144423722_0020_m_000009@@ID asked for a task
+After Scheduling : C:PendingReds : I:1@@PendingReds C:ScheduledMaps : I:8@@ScheduledMaps C:ScheduledReds : I:0@@ScheduledReds C:AssignedMaps : I:2@@AssignedMaps C:AssignedReds : I:0@@AssignedReds C:CompletedMaps : I:0@@CompletedMaps C:CompletedReds : I:0@@CompletedReds C:ContAlloc : I:2@@ContAlloc C:ContRel : I:0@@ContRel C:HostLocal : I:0@@HostLocal C:RackLocal : I:2@@RackLocal
+Retrying connect to C:server : I:msra-sa-41@@server : I:8030. Already tried I:0 time ( s ) ; retry policy is RetryUpToMaximumCountWithFixedSleep ( C:maxRetries = I:10@@maxRetries , C:sleepTime = I:1000@@sleepTime MILLISECONDS )
+Before Scheduling : C:PendingReds : I:0@@PendingReds C:ScheduledMaps : I:2@@ScheduledMaps C:ScheduledReds : I:1@@ScheduledReds C:AssignedMaps : I:9@@AssignedMaps C:AssignedReds : I:0@@AssignedReds C:CompletedMaps : I:1@@CompletedMaps C:CompletedReds : I:0@@CompletedReds C:ContAlloc : I:11@@ContAlloc C:ContRel : I:1@@ContRel C:HostLocal : I:7@@HostLocal C:RackLocal : I:3@@RackLocal
+getResources ( ) for I:application_1445144423722_0020 : C:ask = I:4@@ask C:release = I:0@@release C:newContainers = I:1@@newContainers C:finishedContainers = I:0@@finishedContainers resourcelimit = < C:memory : I:0@@memory , C:vCores : I:-27@@vCores > C:knownNMs = I:4@@knownNMs
+Resolved I:MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+Recalculating schedule , headroom = < C:memory : I:0@@memory , C:vCores : I:-27@@vCores >
+Processing the event EventType : CONTAINER_REMOTE_CLEANUP for C:container I:container_1445144423722_0020_01_000004@@container C:taskAttempt I:attempt_1445144423722_0020_m_000002_0@@taskAttempt
+Progress of C:TaskAttempt I:attempt_1445144423722_0020_m_000009_0@@TaskAttempt is : I:0.295472
+ATTEMPT_START I:task_1445144423722_0020_m_000007
+Processing the event EventType : CONTAINER_REMOTE_LAUNCH for C:container I:container_1445144423722_0020_01_000011@@container C:taskAttempt I:attempt_1445144423722_0020_m_000009_0@@taskAttempt
+KILLING I:attempt_1445144423722_0020_m_000003_0
+JVM with C:ID : I:jvm_1445144423722_0020_m_000004@@ID given C:task : I:attempt_1445144423722_0020_m_000002_0@@task
+Default file system [ C:hdfs : I://msra-sa-41@@hdfs : I:9000 ]
+Opening C:proxy : I:MSRA-SA-41.fareast.corp.microsoft.com@@proxy : I:7109
+C:TaskAttempt : [ I:attempt_1445144423722_0020_m_000000_0@@TaskAttempt ] using C:containerId : [ I:container_1445144423722_0020_01_000002@@containerId on C:NM : [ I:04DN8IQ.fareast.corp.microsoft.com@@NM : I:54883 ]
+Launching I:attempt_1445144423722_0020_m_000001_0
+Reduce slow start threshold not met. C:completedMapsForReduceSlowstart I:1@@completedMapsForReduceSlowstart
+Got allocated C:containers I:1@@containers
+Assigned C:container I:container_1445144423722_0020_01_000007@@container to I:attempt_1445144423722_0020_m_000005_0
+Address change detected. Old : I:msra-sa-41/10.190.173.170 : I:8030 New : I:msra-sa-41 : I:8030
